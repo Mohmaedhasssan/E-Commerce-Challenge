@@ -13,6 +13,7 @@ public class ShippingService {
 
         printShipmentNotice(counts, weights, totalWeight);
         return 30; // flat fee
+        // return 0.01 * totalWeight; // per kg fee
     }
 
     private static double calculateWeightAndGroup(List<Shippable> items, Map<String, Integer> counts, Map<String, Double> weights) {
